@@ -142,9 +142,10 @@ var Window = require('ui/handheld/ApplicationWindow');
 ここで注意したいのが拡張子の.jsが省略されている点です。ついつい書いてしまうとハマります。
 
 ちなみにrequire自体はオブジェクトを返す関数なので、こういう書き方もできなくもありません。コードの可読性や保守性と照らし合わせて、使用をご検討ください。
->|javascript|
+
+```javascript
 new require('ui/handheld/ApplicationWindow').open();
-||<
+```
 
 ##Resources/ui/handheld/ApplicationWindow.js
 それではapp.jsからrequireされているApplicationWindow.jsの中身を見てみましょう。
