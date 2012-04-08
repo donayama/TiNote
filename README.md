@@ -1,8 +1,9 @@
 #TiNote - いつかのためにメモを貯めていくTitanium Mobileドキュメントプロジェクト
 
 ##ラインナップ
--Titanium Mobile FirstStep Guide
---Appcelerator titanium Mobileではじめるモバイルアプリ開発最初の一歩
+
+###Titanium Mobile FirstStep Guide Appcelerator titanium Mobileではじめるモバイルアプリ開発最初の一歩
+最新のSDK 2.0.0に対応した新しい入門テキスト
 
 ##コラム
 
