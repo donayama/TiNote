@@ -6,8 +6,8 @@
 代表的なものについて、簡単に説明します。
 
 - build/ 
-ビルド結果を格納するフォルダ(対象のプラットフォームごとに出力先が異なる)
-直接触る必要性はありませんが、ビルドに失敗することがあったときにはこの中身を一度削除することで解決することもあります。（「フルビルド」のやりなおし）
+    ビルド結果を格納するフォルダ(対象のプラットフォームごとに出力先が異なる)
+    直接触る必要性はありませんが、ビルドに失敗することがあったときにはこの中身を一度削除することで解決することもあります。（「フルビルド」のやりなおし）
 
 	-  android/
 
@@ -16,10 +16,10 @@
 	-  mobileweb/
 
 - manifest
-パッケージングする際に用いるアプリケーション定義が記述されています。（基本的に変更しません）
+    パッケージングする際に用いるアプリケーション定義が記述されています。（基本的に変更しません）
 
 - Resources/
-アプリケーション開発を用いるソースやリソースはここに格納します。
+    アプリケーション開発を用いるソースやリソースはここに格納します。
 
 	- app.js
 
@@ -53,7 +53,8 @@ alert(theObject["stringPropName"]);	// このような表現も可能（「文�
 これを踏まえて、app.jsのソースを見ていきましょう。
 
 #app.jsを読む
-```JavaScript:app.js
+
+```JavaScript
 // this sets the background color of the master UIView (when there are no windows/tab groups on it)
 Titanium.UI.setBackgroundColor('#000');
 
@@ -140,7 +141,7 @@ app.jsの例では「win1はlabel1のコンテナとなっている」という�
 画面上の構成物として、視覚的には次の部分になります。
 ￼
 
-<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/WindowTab1.png" height="300" width="200" /><img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/WindowTab2.png" height="300" width="200" />
+<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/WindowTab1.png" height="300" width="200" /> <img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/WindowTab2.png" height="300" width="200" />
 
 
 Tab1・Tab2とアイコンと見出し付きで表示されているのがそれぞれTabと呼ばれるものであり、これを格納している黒のエリアがTabGroupです。
