@@ -140,9 +140,7 @@ app.jsの例では「win1はlabel1のコンテナとなっている」という�
 画面上の構成物として、視覚的には次の部分になります。
 ￼
 
-<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/WindowTab1.png" height="300" width="200" />
-
-<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/WindowTab2.png" height="300" width="200" />
+<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/WindowTab1.png" height="300" width="200" /><img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/WindowTab2.png" height="300" width="200" />
 
 
 Tab1・Tab2とアイコンと見出し付きで表示されているのがそれぞれTabと呼ばれるものであり、これを格納している黒のエリアがTabGroupです。
