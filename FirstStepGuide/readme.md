@@ -1,8 +1,15 @@
 #Titanium Mobile FirstStep Guide  
 ##Appcelerator titanium Mobileではじめるモバイルアプリ開発最初の一歩
+
+
+<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/cover.png" />
+
+
 titanium-mobile-doc-jaで公開している「Appcelerator Titanium MobileでiPhoneアプリ開発を始めよう!!」(2010年3月)ならびに翔泳社刊「Titanium Mobileで開発するiPhone/Androidアプリ」（監修：増井雄一郎氏）の補完原稿に基づき、最新のSDK 2.0.0に対応した新しい入門テキストを作成していきます。
 
 このドキュメント自体は上記ドキュメントを置換することを目的としているため、今後も無償で提供していくつもりにしています。
+
+ちなみにロゴは@ryugoo_さんに作って頂きました！ ありがとうございます。
 
 ##目次（予定）
 
