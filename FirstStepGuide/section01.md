@@ -1,4 +1,4 @@
-1.はじめに
+第一章 スマートフォンアプリ開発の第二の選択肢"Titanium Mobile"とは？
 
 Titanium Mobileとは米Appcelerator Inc.によって開発されているモバイルデバイス向けのアプリケーション開発ツールです。
 特徴として「JavaScriptによるプログラミングのみでiOSデバイス(iPhone, iPod touch, iPad)やAndroid端末向けのアプリケーションが開発できる」ことが挙げられます。 

@@ -7,11 +7,11 @@ Titanium Studio自体の説明はこれぐらいにして、最初の一歩を�
 まずプロジェクトの新規作成ですが、Titanium Studioの"File"メニューやProject Explorerの背景部の右クリックから```New Project```選択します。
 プロジェクト作成ウィザード画面が表示され、まずプロジェクトテンプレートを選択する段となります。
 
-<img src="./images/TiStudioNewProject1.png" />
+<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/TiStudioNewProject1.png" />
 
 ここでは"Titanium Mobile Project”を選択してください。
 ￼
-<img src="./images/TiStudioNewProject2.png" />
+<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/TiStudioNewProject2.png" />
 
 続いて、プロジェクト設定画面に遷移します。
 ￼
@@ -51,21 +51,21 @@ Androidではハイフン "-" を入れると不具合の原因になります�
 
 プロジェクト作成画面の処理が完了すると、ひな形に基づいたフォルダがLocationとして指定されたフォルダに自動生成され、画面もプロジェクト編集画面に遷移します。
 ￼
-<img src="./images/TiStudioNewProject4.png" />
+<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/TiStudioNewProject4.png" />
 
 プロジェクト作成時に生成されるひな形には簡単なスケルトンコードが含まれています。
 早速これをビルドして実行しましょう。
 
 プロジェクトのファイルが表示されている上にあたるツールバー部分にある矢印ボタンをクリックし、ここから Android Emulator、iPad Simulator、iPhone Simulatorのいずれかを選択してください。（iOS DeviceやAndroid Deviceについてはあとで説明します）
 ￼
-<img src="./images/TiStudioMenuRun.png" />
+<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/TiStudioMenuRun.png" />
 
 Deployment Targetに指定されていないプラットフォームについては表示されません。
 
 ##iPhone(iPod touch)/iPadの場合
 iPhone SimulatorもしくはiPad Simulatorの項目選択時は自動的に最新のiOS SDKに基づきビルド・実行がされます。
 ￼
-<img src="./images/TiStudioMenuRun_iPhone.png" />
+<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/TiStudioMenuRun_iPhone.png" />
 
 使用するiOS SDKのバージョンを変更したい場合はRun Configurations...を設定します。設定しない場合はデフォルト設定に基づき、自動作成されます。
 Titanium iOS Simulatorを選択し、ウィンドウの左上にあるNewを選択します。
@@ -77,7 +77,7 @@ Newを選択すると、設定画面が表示されますので、Project欄の�
 再び先程のツールバーに戻って来ますが、こちらでiPhone SimulatorもしくはiPad Simulatorをクリックすることにより、ビルドが開始されます。プロジェクト作成後の初回ビルドは**「フルビルド」**作業が行われるため、 開発環境のスペックにも依存しますが多少時間が掛かります。
 二度目以降は「フルビルド」しないため即座にビルドが終了し、iOSシミュレータが起動するようになりますので、ご安心ください。
 ￼
-<img src="./images/iPhoneSim.png" />
+<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/iPhoneSim.png" />
 
 ##Androidの場合
 Android Emulatorを選択すると、一番新しいSDKに基づいたTitanium用の仮想デバイスが自動作成され実行されます。
@@ -105,8 +105,8 @@ Android Emulatorを選択すると、一番新しいSDKに基づいたTitanium�
 ブレイクポイントなどの設定をしていない場合はほとんど通常の実行と変わりません。
 「デバッグ」パースペクティブに変更することにより、多彩な評価・検証が可能となります。
 ￼
-<img src="./images/TiStudioMenuDebug.png" />
-<img src="./images/TiStudioPerspectiveDebug.png" />
+<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/TiStudioMenuDebug.png" />
+<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/TiStudioPerspectiveDebug.png" />
 
 ちなみにデバッグパースペクティブには画面右上隅にあるパースペクティブ選択ツールバーにあるDebugを選択すれば切り替わります。
 ￼
@@ -115,7 +115,7 @@ Android Emulatorを選択すると、一番新しいSDKに基づいたTitanium�
 ソースコードの左端のグレイの部分を右クリックすると、「Toggle BreakPoint」というメニューが出るのでこちらを選択します。以下の例では61行目にブレイクポイントを仕掛けた結果、行番号2の左側に水色の丸印が表示されます。この丸印がブレイクポイントを示しています。
 なお、丸印の表示されているあたりをダブルクリックすることでもブレイクポイントのON/OFFの切替が可能です。
 ￼
-<img src="./images/TiStudioToggleBreakpoint.png " />
+<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/TiStudioToggleBreakpoint.png " />
 ￼
 デバッグ実行中に新たにブレイクポイントを設定し、そこに到達した場合、次のようなパースペクティブの自動切換え確認ダイアログが表示されます。ここでYesボタンをクリックすると、デバッグパースペクティブに切り替わります。
 ￼
@@ -125,11 +125,11 @@ Android Emulatorを選択すると、一番新しいSDKに基づいたTitanium�
 
 まず左上にあるのがDebug Viewです。実行プロセスやスレッドの情報などが表示されていますが、よく使う部分となるのが右上のツールバーのパートと思います。
 ￼
-<img src="./images/TiStudioPerspectiveDebug1.png" />
+<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/TiStudioPerspectiveDebug1.png" />
 
 その部分だけを拡大したのが下図です。
 ￼
-<img src="./images/TiStudioPerspectiveDebug2.png" />
+<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/TiStudioPerspectiveDebug2.png" />
 
 統合開発環境での開発をしたことがある方にはお馴染みの処理ではありますが、再生ボタンや一時停止ボタン・停止ボタンはデバッグプロセスの実行状態をコントロールするものです。
 
@@ -141,7 +141,7 @@ Android Emulatorを選択すると、一番新しいSDKに基づいたTitanium�
 以下の例は実行中にlabel2のプロパティを展開しているケースです。オブジェクトがTiUILabelであり、textプロパティの値が"I am Window2"であるとなっています。
 実行時にTitanium.API.infoなどを使ってログ欄にプリントデバッグをしなくとも、これで確認できるというわけです。
 
-<img src="./images/TiStudioPerspectiveDebug3.png" />
+<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/TiStudioPerspectiveDebug3.png" />
 ￼
 #実機での実行
 エミュレータでの動作が確認できましたので、続いて実機で動かしてみましょう。
@@ -154,13 +154,13 @@ iOS Provisioning Portalにアクセスするとページ下部に「Get your app
 
 続いてTitanium StudioのツールバーからiOS Deviceを選択します。
 ￼
-<img src="./images/TiStudioMenuRun_iOSDevice.png" />
+<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/TiStudioMenuRun_iOSDevice.png" />
 ￼
 選択するとDeveloper証明書選択やSDK選択が表示されます。
 取得した開発用のProvisioning Profileを「Upload」リンクで選択し、ファイル選択画面が表示されますので、対象となるファイルを選択してください。
 その後、ビルドターゲットとなるSDKのバージョンや開発者証明書を選択して下さい。
 
-<img src="./images/TiStudioMenuRun_iOSDevice1.png" />
+<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/TiStudioMenuRun_iOSDevice1.png" />
 ￼￼
 Finishボタンを押すと、ビルドと実機へのインストール処理が開始されます。
 内部でXcodeを呼び出す実機実行用のビルド処理（シミュレータ用と異なりフルビルド以上の時間が掛かる）を行いインストールファイルを作成、iTunes経由でアプリケーションの実機インストールを行います。
@@ -169,7 +169,7 @@ Finishボタンを押すと、ビルドと実機へのインストール処理�
 ##Androidの場合
 あらかじめ実機の設定画面で「USBデバッグ」を有効にしたAndroid端末をケーブル接続しておき、Android Deviceを選択してください。
 ￼
-<img src="./images/TiStudioMenuRun_AndroidDevice.png" />
+<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/TiStudioMenuRun_AndroidDevice.png" />
 ￼
 エミュレータ起動が遅い反面、実機への転送はiOSに比べて迅速に行うことができますので、Titanium MobileでAndroid開発をする際にはエミュレータではなく初めから実機転送をしているケースもあるようです。
 なお、Titanium Studio上で転送完了しているように見えて、インストール出来ていないときはオフライン状態と認識されている可能性があります。
