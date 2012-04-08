@@ -1,7 +1,7 @@
 3-2. Hello, TiWorld解説
 
 #プロジェクトのフォルダ構成
-<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/ProjectFolderLayout.png" />
+<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/ProjectFolderLayout.png" align="right" />
 次のようなファイルやフォルダが生成されています。
 代表的なものについて、簡単に説明します。
 
@@ -139,9 +139,10 @@ app.jsの例では「win1はlabel1のコンテナとなっている」という�
 さて、画面上の部品としてTabGroup、Tab、そしてWindowというものが登場しました。
 画面上の構成物として、視覚的には次の部分になります。
 ￼
-<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/WindowTab1.png" />
 
-<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/WindowTab2.png" />
+<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/WindowTab1.png" height="300" width="200" />
+
+<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/WindowTab2.png" height="300" width="200" />
 
 
 Tab1・Tab2とアイコンと見出し付きで表示されているのがそれぞれTabと呼ばれるものであり、これを格納している黒のエリアがTabGroupです。
@@ -150,7 +151,7 @@ Tabを選択すると、それに紐づくWindowに切り替わります。
 Windowはコンテンツを表示するユーザインタフェイスの中核部分になります。
 Window上にはコンテナとして複数のViewもしくはコントロールが配置(add)もしくは除去(remove)できる他、Viewやコントロール自体もコンテナとなることが可能です。Window内に深い階層構造が発生するため、画面設計時にその親子関係を把握しておく必要があります。
 
-<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/WindowTab3.png" />
+<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/WindowTab3.png" height="300" width="200" />
 
 	Tab	Window	NavBar	Button×２個	
 	MapView	Annotation	ImageView
