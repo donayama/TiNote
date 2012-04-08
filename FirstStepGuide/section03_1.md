@@ -82,7 +82,7 @@ Newを選択すると、設定画面が表示されますので、Project欄の�
 ##Androidの場合
 Android Emulatorを選択すると、一番新しいSDKに基づいたTitanium用の仮想デバイスが自動作成され実行されます。
 
-<img src="./TiStudioMenuRun_Android.png" />
+<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/TiStudioMenuRun_Android.png" />
 
 このSDKのバージョンやScreenサイズの選択を事前に行うことができます。iOSの同様にRun Configurations...を選択し、Titanium Android Emulatorの項を追加してください。
 プロジェクトを選択後、Android SDKの項目とScreenの項目のプルダウンから適切な値を選択してApplyボタンをクリックしてください。
@@ -104,8 +104,10 @@ Android Emulatorを選択すると、一番新しいSDKに基づいたTitanium�
 ツールバーの左側にある虫のアイコンをクリックすると表示される候補から実行したいプラットフォームを選択することによってデバッグ実行されます。
 ブレイクポイントなどの設定をしていない場合はほとんど通常の実行と変わりません。
 「デバッグ」パースペクティブに変更することにより、多彩な評価・検証が可能となります。
+
 ￼
 <img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/TiStudioMenuDebug.png" />
+
 <img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/TiStudioPerspectiveDebug.png" />
 
 ちなみにデバッグパースペクティブには画面右上隅にあるパースペクティブ選択ツールバーにあるDebugを選択すれば切り替わります。
@@ -115,8 +117,10 @@ Android Emulatorを選択すると、一番新しいSDKに基づいたTitanium�
 ソースコードの左端のグレイの部分を右クリックすると、「Toggle BreakPoint」というメニューが出るのでこちらを選択します。以下の例では61行目にブレイクポイントを仕掛けた結果、行番号2の左側に水色の丸印が表示されます。この丸印がブレイクポイントを示しています。
 なお、丸印の表示されているあたりをダブルクリックすることでもブレイクポイントのON/OFFの切替が可能です。
 ￼
+
 <img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/TiStudioToggleBreakpoint.png " />
 ￼
+
 デバッグ実行中に新たにブレイクポイントを設定し、そこに到達した場合、次のようなパースペクティブの自動切換え確認ダイアログが表示されます。ここでYesボタンをクリックすると、デバッグパースペクティブに切り替わります。
 ￼
 ##デバッグパースペクティブ
@@ -125,11 +129,15 @@ Android Emulatorを選択すると、一番新しいSDKに基づいたTitanium�
 
 まず左上にあるのがDebug Viewです。実行プロセスやスレッドの情報などが表示されていますが、よく使う部分となるのが右上のツールバーのパートと思います。
 ￼
+
 <img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/TiStudioPerspectiveDebug1.png" />
+
 
 その部分だけを拡大したのが下図です。
 ￼
+
 <img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/TiStudioPerspectiveDebug2.png" />
+
 
 統合開発環境での開発をしたことがある方にはお馴染みの処理ではありますが、再生ボタンや一時停止ボタン・停止ボタンはデバッグプロセスの実行状態をコントロールするものです。
 
@@ -141,8 +149,10 @@ Android Emulatorを選択すると、一番新しいSDKに基づいたTitanium�
 以下の例は実行中にlabel2のプロパティを展開しているケースです。オブジェクトがTiUILabelであり、textプロパティの値が"I am Window2"であるとなっています。
 実行時にTitanium.API.infoなどを使ってログ欄にプリントデバッグをしなくとも、これで確認できるというわけです。
 
+
 <img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/TiStudioPerspectiveDebug3.png" />
 ￼
+
 #実機での実行
 エミュレータでの動作が確認できましたので、続いて実機で動かしてみましょう。
 
@@ -154,14 +164,18 @@ iOS Provisioning Portalにアクセスするとページ下部に「Get your app
 
 続いてTitanium StudioのツールバーからiOS Deviceを選択します。
 ￼
+
 <img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/TiStudioMenuRun_iOSDevice.png" />
 ￼
+
 選択するとDeveloper証明書選択やSDK選択が表示されます。
 取得した開発用のProvisioning Profileを「Upload」リンクで選択し、ファイル選択画面が表示されますので、対象となるファイルを選択してください。
 その後、ビルドターゲットとなるSDKのバージョンや開発者証明書を選択して下さい。
 
+
 <img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/TiStudioMenuRun_iOSDevice1.png" />
 ￼￼
+
 Finishボタンを押すと、ビルドと実機へのインストール処理が開始されます。
 内部でXcodeを呼び出す実機実行用のビルド処理（シミュレータ用と異なりフルビルド以上の時間が掛かる）を行いインストールファイルを作成、iTunes経由でアプリケーションの実機インストールを行います。
 なお、iTunesでインストールする対象となるデバイスとの同期設定がされていないと、最終的に実機に転送されません。
@@ -169,8 +183,10 @@ Finishボタンを押すと、ビルドと実機へのインストール処理�
 ##Androidの場合
 あらかじめ実機の設定画面で「USBデバッグ」を有効にしたAndroid端末をケーブル接続しておき、Android Deviceを選択してください。
 ￼
+
 <img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/TiStudioMenuRun_AndroidDevice.png" />
 ￼
+
 エミュレータ起動が遅い反面、実機への転送はiOSに比べて迅速に行うことができますので、Titanium MobileでAndroid開発をする際にはエミュレータではなく初めから実機転送をしているケースもあるようです。
 なお、Titanium Studio上で転送完了しているように見えて、インストール出来ていないときはオフライン状態と認識されている可能性があります。
 その場合は、実機の設定画面でUSBデバッグを一旦解除して、再度有効にすると転送できるようになることがあります。オフラインになっているかどうかはddmsコマンドやadbコマンドの実行により確認できます。

@@ -5,18 +5,19 @@ titanium-mobile-doc-jaで公開している「Appcelerator Titanium MobileでiPh
 このドキュメント自体は上記ドキュメントを置換することを目的としているため、今後も無償で提供していくつもりにしています。
 
 ##目次（予定）
--第一章 スマートフォンアプリ開発の第二の選択肢"Titanium Mobile"とは？
--第二章 Titanium Mobile環境構築
---開発環境の準備
---Titanium Studioのインストール
--第三章 Hello, TiWorld!
---プロジェクトの作成／シミュレータ実行／デバッグ／実機実行
---(未)プロジェクトのファイル構成／app.js解説
---(未)ソース修正
---(未)tiapp.xml
--(未)第四章 KitchenSink
--(未)第五章 BestPractice
---http://d.hatena.ne.jp/donayama/20120102/bestpractices
---CommonJSコードリーディング
---http://d.hatena.ne.jp/donayama/20120406/singlewindow_commonjs_sample
--(未)Appendix
+
+- 第一章 スマートフォンアプリ開発の第二の選択肢"Titanium Mobile"とは？
+- 第二章 Titanium Mobile環境構築
+    - 開発環境の準備
+    - Titanium Studioのインストール
+- 第三章 Hello, TiWorld!
+    - プロジェクトの作成／シミュレータ実行／デバッグ／実機実行
+    - (未)プロジェクトのファイル構成／app.js解説
+    - (未)ソース修正
+    - (未)tiapp.xml
+- (未)第四章 KitchenSink
+- (未)第五章 BestPractice
+    - http://d.hatena.ne.jp/donayama/20120102/bestpractices
+    - CommonJSコードリーディング
+        - http://d.hatena.ne.jp/donayama/20120406/singlewindow_commonjs_sample
+- (未)Appendix
