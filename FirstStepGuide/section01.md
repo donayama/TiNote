@@ -43,6 +43,8 @@ SQLiteデータベース</td></tr>
 また最終的にネイテイブアプリケーションとして動作するため、App StoreやGoogle Play(Android Marketplace)でのアプリ公開も可能です。
 Titanium Mobileで開発されていると公言されているアプリケーションは多くないのですが、少なからずアプリケーションが公開されているようです。開発元のAppcelerator社のサイト内で代表的なユーザとしてはNBC Universal、eBay/PayPal/Anheuser-Busch、MTV、Computer Service Corporationが挙げられています。
 
+日本で代表的なアプリケーションとしてはココログ、Zaim、MogSnapなどが挙げられます。
+
 ##Titanium Mobileを支えるテクノロジ
 Titanium MobileはJavaScriptでアプリケーションの画面操作・ロジックといったところをすべて記述します。
 
