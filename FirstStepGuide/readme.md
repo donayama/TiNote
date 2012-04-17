@@ -24,4 +24,5 @@
         - http://d.hatena.ne.jp/donayama/20120406/singlewindow_commonjs_sample
 - (未)Appendix
     - (未)tiapp.xml
-    - (未)ACS入門
+    - (未)UIカタログ
+    - [Appendix. 写真投稿アプリを通じて学ぶ Appcelerator Cloud Service はじめの一歩](appendix_acs.md)

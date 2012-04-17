@@ -1,3 +1,5 @@
+<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/cover.png" height="240" />
+
 第三章 Hello, TiWorld!（１）実践してみる
 ========================================================
 Titanium Studio自体の説明はこれぐらいにして、最初の一歩を踏み出すべく、いわゆるHello Worldアプリケーションの作成に取り掛かりましょう。

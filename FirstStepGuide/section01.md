@@ -1,3 +1,5 @@
+<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/cover.png" height="240" />
+
 第一章 スマートフォンアプリ開発の第二の選択肢"Titanium Mobile"とは？
 ==========================================================
 Titanium Mobileとは米Appcelerator Inc.によって開発されているモバイルデバイス向けのアプリケーション開発ツールです。
@@ -89,9 +91,40 @@ githubのAppceleratorアカウントには各種製品やサンプルのレポ�
 また、手前味噌ながら筆者が運営する日本語情報発信プロジェクトtitanium-mobile-doc-jaをはじめ日本語での得られる情報が多く存在しており、PhoneGapやColona、Mono touchといった同分野に位置するフレームワークや開発ツールとは一線を画する認知度を持つようになってきました。
 
 ##価格体系・ライセンス
-Titanium Mobileには無料で利用可能なTitanium Communityライセンスと月額費用型のTitanium Indieライセンスが用意されています。
-（4/17にライセンス体系が変更されたので、更新予定です http://appcelerator.com/plans-pricing ）
+Titanium Mobileの利用に際しては無料で利用可能なApp EXPLOREライセンスと月額費用型のApp ACCELERATEライセンスが用意されています。App ACCELERATEにはStandard、Enhanced、Premiumの３種類のラインナップが用意されており、それぞれでサービスレベルが異なります。
 
+いずれにおいてもTitanium SDKの利用や統合開発環境Titanium Studioの利用に制限はありません。
+
+<table><tr><th colspan="2" rowspan="2"></th>
+<th rowspan="2">App EXPLORE</th>
+<th colspan="3">App ACCELERATE</th>
+</tr><tr>
+<th>STANDARD</th>
+<th>ENHANCED</th>
+<th>PREMIUM</th>
+</tr>
+<tr><th colspan="2">Appcelerator Analytics(解析機能)</th>
+<td>5万イベント/月</td><td>10万イベント/月</td><td>20万イベント/月</td><td>30万イベント/月</td></th></tr>
+<tr><th rowspan="4">Appcelerator<br />Cloud Sevices<br />の利用</th>
+<th>プッシュ通知・メール送信</th>
+<td>125万回/月</td><td colspan="3">無制限</td></tr>
+<tr>
+<th>Tier1API利用</th><td>25万回/月</td><td>50万回/月</td><td>100万回/月</td><td>150万回/月</td></tr>
+</tr>
+<tr>
+<th>Tier2API利用</th><td>25万回/月</td><td>50万回/月</td><td>100万回/月</td><td>150万回/月</td></tr>
+</tr>
+<tr>
+<th>ストレージ</th><td>5GB</td><td>10GB</td><td>20GB</td><td>30GB</td></tr>
+<tr><th rowspan="5">サポート</th><th>対応方法</th><td>Webのみ</td><td>Web/Chat</td><td colspan="2">Web/Chat/電話</td></tr>
+<tr><th>バグ対応</th><td>-</td><td colspan="3">致命的なバグ対応</td></tr>
+<tr><th>対応時間</th><td colspan="2">平日8時〜17時（西海岸時間）</td><td colspan="2">毎日8時〜17時（西海岸時間）</td></tr>
+<tr><th>レスポンス</th><td>ベストエフォート</td><td>2営業日内</td><td>1営業日内</td><td>8時間以内</td></tr>
+<tr><th>advisory hours</th><td colspan="2">-</td><td>10時間/年</td><td>20時間/年</td></tr>
+</table>
+
+###2012年4月17日までのライセンスについて
+Titanium Mobileには無料で利用可能なTitanium Communityライセンスと月額費用型のTitanium Indieライセンスが用意されています。
 <table border="2">
 <tr><th> </th><th>Titanium Community</th><th>Titanium
 Indie</th><th>補足</th></tr>

@@ -1,3 +1,5 @@
+<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/cover.png" height="240" />
+
 第二章 Titanium Mobile環境構築（２）Titanium Studioのインストール
 ========================================================
 Titanium Mobile(SDK)自体は単体ではコンソールベースで動作する開発環境ですが、Titanium Studioはいわゆる統合開発環境であり、ソフトウェアに内蔵されたエディタによる入力補完、ウィザード形式で作成できるプロジェクトやその管理、プログラムソースのビルド、シミュレータや実機への転送、配布用のファイル作成といった一連の挙動をGUI上で総合的に行うことができます。

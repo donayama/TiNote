@@ -1,3 +1,5 @@
+<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/cover.png" height="240" />
+
 第四章 KitchenSink
 ==========================================================
 それぞれのUI部品の動作を見るためには「KitchenSink」というデモアプリがおすすめです。

@@ -1,3 +1,5 @@
+<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/cover.png" height="240" />
+
 第二章 Titanium Mobile環境構築（１）開発環境の準備
 ========================================================
 Titanium Mobileでの開発に必要となる統合開発環境Titanium Studioをはじめ、iOS・Androidの各開発環境の導入を行い、Hello Worldアプリケーションを開発する準備をしましょう。

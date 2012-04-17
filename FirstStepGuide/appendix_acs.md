@@ -1,16 +1,7 @@
-写真投稿アプリを通じて学ぶ Appcelerator Cloud Service はじめの一歩
+<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/cover.png" height="240" />
 
-#アジェンダ
-
--	Appcelerator Cloud Service(ACS)とは何か？
-	-	費用面とかもろもろ
-	-	ACSのために必要なもの
--	サンプルアプリ開発
-	-	ACSにアプリケーション設定をする
-	-	ログイン処理
-	-	写真の一覧表示
-	-	写真のアップロード
-
+Appendix. 写真投稿アプリを通じて学ぶ Appcelerator Cloud Service はじめの一歩
+==========================================================
 #Appcelerator Cloud Service(ACS)とは何か？
 
 Appceleator Cloud Serviceと呼ばれるサービスがTitanium Mobile 2.0からサポートされるようになりました。

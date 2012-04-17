@@ -1,3 +1,5 @@
+<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/cover.png" height="240" />
+
 第三章 Hello, TiWorld（２）ソース解説
 ========================================================
 先ほど動かしてみたソースについて中身を追いかけていきたいと思います。
