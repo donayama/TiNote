@@ -50,7 +50,25 @@ Cloud.Photos.create({
 
 ##費用面とかもろもろ
 
-（あとでかく）
+ACSの公開にあわせて、これまでのTitanium Community EditionをはじめとするSubscriptionの体制が一新されました。
+
+http://appcelerator.com/plans-pricing
+
+これまでのCommunityにあたるのがApp EXPLOREですが、このEditionでもACSの利用は可能です。毎月の処理量に制限(いわゆるQuota)が設定されており、125万回のプッシュ通知（メール含む）、Tier1 Tier2のAPIコール（どのAPIがどのTierなのかが明示的ではないのですが…）がそれぞれ25万回、5GBのストレージという制限がついています。
+
+ビジネスユースを想定すると少々厳しい設定値となっていますが、テスト的な目的には十分無料で使えるのではないでしょうか。
+
+これ以上の利用に対しては有償利用となる３段階のグレードが用意されております。
+いずれもプッシュ通知・メール送信は無制限となっており、APIコール回数とストレージ容量が異なります。（さらにいうとサポートレベルも変わります）
+
+- App ACCELERATE STANDARD
+    - APIコールがそれぞれ50万回、10GBストレージ
+- App ACCELERATE ENHANCED
+    - APIコールがそれぞれ100万回、20GBストレージ
+- App ACCELERATE PREMIUM
+    - APIコールがそれぞれ150万回、30GBストレージ
+
+肝心の費用については今のところ「営業に聞いてくれ」というパターンですので、ちょっと不安が残りますね。
 
 ##ACSのために必要なもの
 

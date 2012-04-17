@@ -1,6 +1,8 @@
-3-2. Hello, TiWorld解説
+第三章 Hello, TiWorld（２）ソース解説
+========================================================
+先ほど動かしてみたソースについて中身を追いかけていきたいと思います。
 
-#プロジェクトのフォルダ構成
+##プロジェクトのフォルダ構成
 <img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/ProjectFolderLayout.png" align="right" />
 次のようなファイルやフォルダが生成されています。
 代表的なものについて、簡単に説明します。
@@ -32,7 +34,7 @@
 		Android/iOS/Web向けに依存したソースや画像のリソースを格納します。
 		ビルド時にResourcesにマージされ、機種依存を吸収される。
 
-#app.jsを読む…前に
+##app.jsを読む…前に
 アプリケーションの開始点（エントリポイント）となるapp.jsですが、その内容を説明する前に、その中で関数（メソッド）の引数として度々登場している**JavaScriptオブジェクトリテラル**という表現について先に触れておきます。
 
 ```JavaScript
@@ -52,7 +54,7 @@ alert(theObject["stringPropName"]);	// このような表現も可能（「文�
 ひとまずは、他の言語系で連想配列・ハッシュテーブル・ディクショナリと呼ばれるものと同じように捉えていただいて結構です。 
 これを踏まえて、app.jsのソースを見ていきましょう。
 
-#app.jsを読む
+##app.jsを読む
 
 ```JavaScript
 // this sets the background color of the master UIView (when there are no windows/tab groups on it)
@@ -156,7 +158,7 @@ Window上にはコンテナとして複数のViewもしくはコントロール�
 	MapView	Annotation	ImageView
 	Toolbar	Button×7個
 
-#プラットフォームによるUIの違い
+##プラットフォームによるUIの違い
 
 すでに画面を見ていただいているためにお気づきかもしれませんが、タブの選択部分がiOSでは下部に、Androidでは上部に表示されるようになっています。
 

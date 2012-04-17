@@ -1,8 +1,8 @@
-3-1.Hello, TiWorld!
-
+第三章 Hello, TiWorld!（１）実践してみる
+========================================================
 Titanium Studio自体の説明はこれぐらいにして、最初の一歩を踏み出すべく、いわゆるHello Worldアプリケーションの作成に取り掛かりましょう。
 
-#プロジェクト作成
+##プロジェクト作成
 
 まずプロジェクトの新規作成ですが、Titanium Studioの"File"メニューやProject Explorerの背景部の右クリックから```New Project```選択します。
 プロジェクト作成ウィザード画面が表示され、まずプロジェクトテンプレートを選択する段となります。
@@ -62,7 +62,7 @@ Androidではハイフン "-" を入れると不具合の原因になります�
 
 Deployment Targetに指定されていないプラットフォームについては表示されません。
 
-##iPhone(iPod touch)/iPadの場合
+###iPhone(iPod touch)/iPadの場合
 iPhone SimulatorもしくはiPad Simulatorの項目選択時は自動的に最新のiOS SDKに基づきビルド・実行がされます。
 ￼
 <img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/TiStudioMenuRun_iPhone.png" />
@@ -79,7 +79,7 @@ Newを選択すると、設定画面が表示されますので、Project欄の�
 ￼
 <img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/iPhoneSim.png" />
 
-##Androidの場合
+###Androidの場合
 Android Emulatorを選択すると、一番新しいSDKに基づいたTitanium用の仮想デバイスが自動作成され実行されます。
 
 <img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/TiStudioMenuRun_Android.png" />
@@ -89,7 +89,7 @@ Android Emulatorを選択すると、一番新しいSDKに基づいたTitanium�
 
 残念ながら、iOSシミュレータとは異なりAndroidエミュレータは**起動が大変遅く**、仮想デバイスへのアプリケーションもかなり時間がかかる遅いものとなっています。
 
-#デバッグ機能について
+##デバッグ機能について
 ちなみにTitanium Studioで提供されるDebug機能があります。（古いドキュメントを見ると、有償ユーザ向けのみとなっていますが、Titanium Studio Ver.1.0.2からは全ユーザに対して一般公開されています）
 
 デバッグ機能は実機に対しての実行はできませんが、iPhoneシミュレータ・Androidエミュレータ上での実行時に以下のような処理を行うことが出来ます。
@@ -100,7 +100,7 @@ Android Emulatorを選択すると、一番新しいSDKに基づいたTitanium�
 - サスペンド中の変数の展開や変更
 - シミュレータ上でアプリの一時停止やステップ実行
 
-##デバッグ実行方法
+###デバッグ実行方法
 ツールバーの左側にある虫のアイコンをクリックすると表示される候補から実行したいプラットフォームを選択することによってデバッグ実行されます。
 ブレイクポイントなどの設定をしていない場合はほとんど通常の実行と変わりません。
 「デバッグ」パースペクティブに変更することにより、多彩な評価・検証が可能となります。
@@ -112,7 +112,7 @@ Android Emulatorを選択すると、一番新しいSDKに基づいたTitanium�
 
 ちなみにデバッグパースペクティブには画面右上隅にあるパースペクティブ選択ツールバーにあるDebugを選択すれば切り替わります。
 ￼
-##ブレイクポイントの設定
+###ブレイクポイントの設定
 
 ソースコードの左端のグレイの部分を右クリックすると、「Toggle BreakPoint」というメニューが出るのでこちらを選択します。以下の例では61行目にブレイクポイントを仕掛けた結果、行番号2の左側に水色の丸印が表示されます。この丸印がブレイクポイントを示しています。
 なお、丸印の表示されているあたりをダブルクリックすることでもブレイクポイントのON/OFFの切替が可能です。
@@ -153,10 +153,10 @@ Android Emulatorを選択すると、一番新しいSDKに基づいたTitanium�
 <img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/TiStudioPerspectiveDebug3.png" />
 ￼
 
-#実機での実行
+##実機での実行
 エミュレータでの動作が確認できましたので、続いて実機で動かしてみましょう。
 
-##iOS(iPhone/iPad/iPod touch)の場合
+###iOS(iPhone/iPad/iPod touch)の場合
 iOSデバイスで実機検証するためには前述した通りiOS Developer Programへ登録をした上で、Provisioning Profileという証明書を用意する必要があります。
 
 iOS Provisioning Portalにアクセスするとページ下部に「Get your application on an iOS with the Development Provisioning Assistant」と書かれた欄があり、その下部に「Launch Assistant」というボタンがあります。これをクリックし、画面の指示に従って項目を登録し、開発者証明書（Development Certificate）・WWDR intermediate・開発用プロビジョニングプロファイル（Development Provisioning Profile）をダウンロードします。
@@ -180,7 +180,7 @@ Finishボタンを押すと、ビルドと実機へのインストール処理�
 内部でXcodeを呼び出す実機実行用のビルド処理（シミュレータ用と異なりフルビルド以上の時間が掛かる）を行いインストールファイルを作成、iTunes経由でアプリケーションの実機インストールを行います。
 なお、iTunesでインストールする対象となるデバイスとの同期設定がされていないと、最終的に実機に転送されません。
 
-##Androidの場合
+###Androidの場合
 あらかじめ実機の設定画面で「USBデバッグ」を有効にしたAndroid端末をケーブル接続しておき、Android Deviceを選択してください。
 ￼
 

@@ -1,10 +1,10 @@
 第一章 スマートフォンアプリ開発の第二の選択肢"Titanium Mobile"とは？
-
+==========================================================
 Titanium Mobileとは米Appcelerator Inc.によって開発されているモバイルデバイス向けのアプリケーション開発ツールです。
 特徴として「JavaScriptによるプログラミングのみでiOSデバイス(iPhone, iPod touch, iPad)やAndroid端末向けのアプリケーションが開発できる」ことが挙げられます。 
 本章ではそのおおまかな概念や動作原理、動作させるのに必要となる環境についてについて触れます。
 
-#スマートフォンアプリ開発の第二の選択肢
+##スマートフォンアプリ開発の第二の選択肢
 
 このドキュメントに興味を持たれたという事は、少なからずスマートフォンアプリケーション開発にご興味・ご関心があるかと思います。
 
@@ -16,7 +16,7 @@ Titanium Mobileとは米Appcelerator Inc.によって開発されているモバ
 
 「複数ある」とわざわざ明記したようにAdobeに買収されたPhoneGap (http://phonegap.com) 、C#などの.NET言語で開発ができるMono touch (http://xamarin.com/monotouch) 、物理演算を使うような2Dゲーム開発に有利なCorona (http://www.anscamobile.com/corona/) などの選択肢がありますが、本書ではネイティブUIを使った違和感の無いUX(ユーザ体験)を提供しやすいTitanium Mobileについて触れていきたいと思います。
 
-#Titanium Mobileとは何か？
+##Titanium Mobileとは何か？
 
 Titanium Mobileは Objective-CやJavaといったプラットフォームSDKが想定しているプログラム言語の代わりにJavaScriptでのプログラム開発が行えるツールキットです。
 
@@ -45,7 +45,7 @@ Titanium Mobileで開発されていると公言されているアプリケー�
 
 日本で代表的なアプリケーションとしてはココログ、Zaim、MogSnapなどが挙げられます。
 
-##Titanium Mobileを支えるテクノロジ
+###Titanium Mobileを支えるテクノロジ
 Titanium MobileはJavaScriptでアプリケーションの画面操作・ロジックといったところをすべて記述します。
 
 ではそれは実際にはデバイス上でどのように動作するのでしょうか。
@@ -62,7 +62,7 @@ Titanium MobileはJavaScriptでアプリケーションの画面操作・ロジ�
 
 Titanium Mobile 1.8でサポートされたGoogle V8 RuntimeによりAndroid環境においてもパフォーマンス面で遜色ないものになりつつあります。
 
-##開発元Appcelerator社について
+###開発元Appcelerator社について
 Appcelerator Inc.（アプセラレータ、以下Appcelerator）はカリフォルニア州マウンテンビュー、いわゆるシリコンバレーに所在するITベンチャー企業です。
 
 CEOのJeff Haynie氏を中心に2011年12月時点で100名弱のスタッフを抱え、Titanium Mobile（タイタニウム モバイル もしくは タイタニアム モバイル）を中心にした同社の各製品の開発、ユーザサポートを行っています。
@@ -82,7 +82,7 @@ githubのAppceleratorアカウントには各種製品やサンプルのレポ�
 
 この種の中間処理を委ねるツールキットはブラックボックスになりがちなため、何らかのトラブルに直面した時に対処しづらい傾向にありますが、同社の製品については公開されたソースコードを追うことにより製品バグか否かの切り分けもできるというメリットがあります。
 
-##日本で注目を集めるTitanium Mobile
+###日本で注目を集めるTitanium Mobile
 日本では2010年秋頃までは細々としか使われていなかったTitanium Mobileですが、10月以降アルファブロガーと呼ばれる方々がTitanium Mobileに関するプレゼンや記事を発表されたことにより急激に注目をあつめるようになりました。
 
 また、増井雄一郎氏(@masuidrive)が12月よりAppceleratorに参画され、日本でのエバンジェリスト活動をされたことにより、一層認知度が向上し、2012年に日本法人の設立がされる予定となっています。
@@ -90,6 +90,7 @@ githubのAppceleratorアカウントには各種製品やサンプルのレポ�
 
 ##価格体系・ライセンス
 Titanium Mobileには無料で利用可能なTitanium Communityライセンスと月額費用型のTitanium Indieライセンスが用意されています。
+（4/17にライセンス体系が変更されたので、更新予定です http://appcelerator.com/plans-pricing ）
 
 <table border="2">
 <tr><th> </th><th>Titanium Community</th><th>Titanium
@@ -108,7 +109,7 @@ Indie</th><th>補足</th></tr>
 
 ただ、開発者掲示板（掲示板型のQ&Aサイト）自体もAppceleratorが運営しており、そこで開発者間での相互扶助という形で問題解決の道が用意されています。開発者フォーラムにおいてもAppceleratorの開発者は回答していますが、回答や対応までの時間に関する保証がないという形になります。本書では無料のCommunity Editionで利用出来る範囲についてのみ触れていきますので、ご安心ください。
 
-#「第二の選択肢」のリスク
+##「第二の選択肢」のリスク
 
 2010年４月にあったiOS4の発表の折、開発者コミュニティで話題となったのがSection 3.3問題でした。SDKのダウンロード時に表示される規約文に次のような文言が記載されていたのです。
 
