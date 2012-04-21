@@ -18,11 +18,13 @@
     - [プロジェクトの作成／シミュレータ実行／デバッグ／実機実行](section03_1.md)
     - [プロジェクトのファイル構成／app.js解説](section03_2.md)
 - [第四章 KitchenSink](section04.md)
-- (未)第五章 BestPractice
-    - http://d.hatena.ne.jp/donayama/20120102/bestpractices
-    - CommonJSコードリーディング
-        - http://d.hatena.ne.jp/donayama/20120406/singlewindow_commonjs_sample
+    - ACSサンプルについても追記する
+- 第五章 BestPractice
+    - [CommonJSで書くJavaScript](section05_commonjs.md)
+    - [Mobile BestPractice](section05_bestpractice.md)
+    - http://docs.appcelerator.com/titanium/2.0/index.html#!/guide/Database_Best_Practices
+    - http://docs.appcelerator.com/titanium/2.0/index.html#!/guide/Image_Best_Practices
 - (未)Appendix
     - (未)tiapp.xml
     - (未)UIカタログ
-    - [Appendix. 写真投稿アプリを通じて学ぶ Appcelerator Cloud Service はじめの一歩](appendix_acs.md)
+    - [Appendix. 写真投稿アプリを通じて学ぶ Appcelerator Cloud Service 最初の一歩](appendix_acs.md)

@@ -1,6 +1,6 @@
 <img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/cover.png" height="240" />
 
-Appendix. 写真投稿アプリを通じて学ぶ Appcelerator Cloud Service はじめの一歩
+Appendix. 写真投稿アプリを通じて学ぶ Appcelerator Cloud Service 最初の一歩
 ==========================================================
 #Appcelerator Cloud Service(ACS)とは何か？
 

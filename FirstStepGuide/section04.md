@@ -56,11 +56,14 @@ Gitからのインポートやこのような既存のTitaniumプロジェクト
 
 ##KitchenSinkの構成
 KitchenSinkは５つのタブからなっており、デモの性質が異なります。
-BaseUI	UIインタフェイス（WindowやViewといったコンテナとなるUI）
-Controls	コンテナに載るUI部品
-Phone	デバイス機能に特化した機能デモ（音声・動画再生、カメラ、アドレス帳）
-Platform	OSに搭載された機能を用いるデモ（ネットワーク通信・データベースなど）
-Mashups	RSS FeedやFacebook、Twitter APIなどのリモートデータを利用したデモ
+
+<table border="2">
+<tr><th>BaseUI</th><td>UIインタフェイス（WindowやViewといったコンテナとなるUI）</td></tr>
+<tr><th>Controls</th><td>コンテナに載るUI部品</td></tr>
+<tr><th>Phone</th><td>デバイス機能に特化した機能デモ（音声・動画再生、カメラ、アドレス帳）</td></tr>
+<tr><th>Platform</th><td>OSに搭載された機能を用いるデモ（ネットワーク通信・データベースなど）</td></tr>
+<tr><th>Mashups	</th><td>RSS FeedやFacebook、Twitter APIなどのリモートデータを利用したデモ</td></tr>
+</table>
 
 なお、iOSシミュレータなどのエミュレータ上ではハードウェアに依存する処理（カメラ・加速度センサ・電子コンパスなど）がサポートされていないため、動作しません。
 すべての機能を知るにはやはり実機に転送する必要がありますが、iOSでは実機検証するために有償のiOS Developer Programに参加する必要があります。

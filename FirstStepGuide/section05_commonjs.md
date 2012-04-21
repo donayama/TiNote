@@ -1,9 +1,11 @@
-#シングルコンテキストかつCommonJSなTiサンプルを読む(draft)
->ひとまず草稿版です。ツッコミがあればこそこそ直して行きます(^^;
+<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/cover.png" height="240" />
 
-Titanium Mobile 2.0からAPIデモアプリであるKitchenSinkがついにというか、ようやくCommonJSアプリになり、公的なサンプルとしてTitanium 0.9からの伝統のマルチコンテキストモデルがなくなるという事態となりました。
-拙著をものした時期というのがCommonJS化が加速する直前のTitanium Mobile 1.6.xのころで、今となっては目も当てられない状態になってしまっているのですが、それはさておき。
-シングルコンテキストかつCommonJS時代を迎えたTiの初期ソースはどうなるのかを見てきたいと思います。
+第五章 CommonJS形式のアプリケーションテンプレートを読み解く
+==========================================================
+
+Titanium Mobile 2.0からAPIデモアプリであるKitchenSinkが（ようやく）CommonJSアプリになり、Titanium Mobileで書くべきソースのスタイルとして、**シングルコンテキストかつCommonJS形式**がいよいよ望ましい時代となりました。
+
+単一Windowのみを保持するシンプルなアプリケーションテンプレートのサンプルの中身を見ていく事で、CommonJS形式のモジュールの書き方などを習得していきたいと思います。
 
 https://github.com/appcelerator-developer-relations/Template.SingleWindow
 
@@ -19,7 +21,7 @@ https://github.com/appcelerator-developer-relations/Template.SingleWindow
 			* ApplicationWindow.js
 		* ApplicationWindow.js
 	* tablet/
-		*ApplicationWindow.js
+		* ApplicationWindow.js
 	* app.js
 * i18n/
 	* en/
@@ -129,8 +131,8 @@ JavaScriptの変数スコープは関数内で閉じられるため、即時実�
 もう一つ何も説明無くつかっているのがreuqireという関数です。
 これまで他のJSファイルを読み込む必要がある婆、方式としてこのrequire以外に２種類ありました。
 
-* Titanium.UI.createWindow({url: '〜.js'})
-* Titanium.include('〜.js')
+* `Titanium.UI.createWindow({url: '〜.js'})`
+* `Titanium.include('〜.js')`
 
 createWindowでのurl指定はマルチコンテキストモデルの呼び出し方であり、現時点でAppceleratorはこの方式を推奨しておりません。むしろ「特殊なケース」でしか使わないようにという指針を出しています。
 include自体も積極利用を謳っておらず、Appceleratorとしては開発者にこれまでの作り方を一旦リセットしてCommonJSモジュールを用いたコードモデルに移行してほしいという考えのようです。
@@ -321,7 +323,8 @@ String.format(L('welcome'),'Titanium')
 
 この `L` という関数は地域化対応(L10N)を行うための仕掛けで、指定されたキー文字列（ここでは `'welcome'` ）に基づき i18n/xx/strings.xmlを照会し、置き換え処理を行います。
 
-```xml:strings.xml
+
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
 	<string name="welcome">%sへようこそ!</string>
@@ -346,5 +349,7 @@ String.formatというAPIは%sを引数で置き換える処理をするので�
 	});
 ```
 
-このように単に「Titaniumへようこそ!」と表示されるだけのアプリでも以前のようなapp.js1ファイルだけでどうにかするという方法ではなく、徹底的にモジュール化された構造をテンプレートとして用意してきています。
-気軽さという観点ではちょっと敷居が高くなったなあと思いますが、前述の通り入り組んだアプリ構築の際には必ず役に立ってくるはずなので、思い切ってSwitchを試みてはいかがでしょうか。
+このように単に「Titaniumへようこそ!」と表示されるだけのアプリでも以前のようなapp.jsの1ファイルだけでどうにかするという方法ではなく、徹底的にモジュール化された構造をテンプレートとして用意してきています。
+
+気軽さという観点ではちょっと敷居が高くなったなあと思いますが、前述の通り入り組んだアプリ構築の際には必ず役に立ってくるはずなので、思い切ってチャレンジしてみてください。
+

@@ -29,15 +29,34 @@ http://www.appcelerator.com/
 
 次に挙げる代表的機能はすべてAPIで実現できます。
 
+
 <table border="2">
-<tr><th>Native UI</th><td>ラベル・テキスト入力・ボタン・スライダをはじめとした豊富なUI部品
-Webブラウザ機能、地図表示など</td></tr>
-<tr><th>メディア機能</th><td>画像・動画の表示、音声再生・録音、静止画・ビデオ撮影</td></tr>
-<tr><th>データI/O</th><td>ファイルシステムの操作、デバイス内データベース(主にアドレス帳)の操作
-SQLiteデータベース</td></tr>
-<tr><th>ネットワーク通信</th><td>XMLHttpRequestだけではなくSocket通信やBonjourにも対応</td></tr>
-<tr><th>ハードウェアデバイス</th><td>カメラ・GPS・電子コンパス・加速度センサ</td></tr>
-<tr><th>OS特化の機能</th><td>プッシュ通知機能、バックグラウンドサービス、インテント</td></tr>
+<tr>
+    <th>Native UI</th>
+    <td>ラベル・テキスト入力・ボタン・スライダをはじめとした豊富なUI部品
+Webブラウザ機能、地図表示など</td>
+</tr>
+<tr>
+    <th>メディア機能</th>
+    <td>画像・動画の表示、音声再生・録音、静止画・ビデオ撮影</td>
+</tr>
+<tr>
+    <th>データI/O</th>
+    <td>ファイルシステムの操作、デバイス内データベース(主にアドレス帳)の操作
+SQLiteデータベース</td>
+</tr>
+<tr>
+    <th>ネットワーク通信</th>
+    <td>XMLHttpRequestだけではなくSocket通信やBonjourにも対応</td>
+</tr>
+<tr>
+    <th>ハードウェアデバイス</th>
+    <td>カメラ・GPS・電子コンパス・加速度センサ</td>
+</tr>
+<tr>
+    <th>OS特化の機能</th>
+    <td>プッシュ通知機能、バックグラウンドサービス、インテント</td>
+</tr>
 </table>
 
 プラットフォームOS・デバイスに依存したUIやAPIを利用しない限り、基本的にサポートされるプラットフォーム全てに対してコードを転用できると謳われていますので、JavaScriptによる開発効率の向上だけではなくマルチプラットフォーム展開を少ないコストで実現できることも魅力のひとつとなっています。
@@ -104,16 +123,14 @@ Titanium Mobileの利用に際しては無料で利用可能なApp EXPLOREライ
 <th>PREMIUM</th>
 </tr>
 <tr><th colspan="2">Appcelerator Analytics(解析機能)</th>
-<td>5万イベント/月</td><td>10万イベント/月</td><td>20万イベント/月</td><td>30万イベント/月</td></th></tr>
+<td>5万イベント/月</td><td>10万イベント/月</td><td>20万イベント/月</td><td>30万イベント/月</td></tr>
 <tr><th rowspan="4">Appcelerator<br />Cloud Sevices<br />の利用</th>
 <th>プッシュ通知・メール送信</th>
 <td>125万回/月</td><td colspan="3">無制限</td></tr>
 <tr>
 <th>Tier1API利用</th><td>25万回/月</td><td>50万回/月</td><td>100万回/月</td><td>150万回/月</td></tr>
-</tr>
 <tr>
 <th>Tier2API利用</th><td>25万回/月</td><td>50万回/月</td><td>100万回/月</td><td>150万回/月</td></tr>
-</tr>
 <tr>
 <th>ストレージ</th><td>5GB</td><td>10GB</td><td>20GB</td><td>30GB</td></tr>
 <tr><th rowspan="5">サポート</th><th>対応方法</th><td>Webのみ</td><td>Web/Chat</td><td colspan="2">Web/Chat/電話</td></tr>
