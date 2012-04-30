@@ -1,0 +1,41 @@
+body{
+    margin-left:40px;
+    margin-right:40px;
+    background-color: #eee;
+}
+pre {background-color: #fff; border: 1px dashed gray; margin: 6px; padding:12px; line-height:120%; font-size: 10pt}
+code {font-family: sans-serif}
+h1{
+    page-break-before: always;
+    font-size: 20pt;
+    border-bottom: solid 4px black;
+}
+h2{
+margin-top:1em;
+    font-size: 16pt;
+    border-bottom: solid 1px black;
+}
+h3{
+margin-top:1em;
+   font-size:14pt;
+   border-bottom: dashed 1px black;
+}
+h4{
+   font-size:12pt;
+}
+img{
+    max-width: 600px;
+    max-height: 400px;
+}
+p{
+    font-size:12pt;
+    line-height:150%;
+}
+table{
+    border-collapse:collapse;
+}
+table, td, th {
+    border: 2px solid #333;
+    padding :8px;
+    font-size:11pt;
+}

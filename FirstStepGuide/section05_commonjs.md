@@ -1,5 +1,3 @@
-<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/cover.png" height="240" />
-
 第五章 CommonJS形式のアプリケーションテンプレートを読み解く
 ==========================================================
 

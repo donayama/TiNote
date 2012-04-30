@@ -1,5 +1,3 @@
-<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/cover.png" height="240" />
-
 第四章 KitchenSink
 ==========================================================
 それぞれのUI部品の動作を見るためには「KitchenSink」というデモアプリがおすすめです。
@@ -18,16 +16,22 @@ APIリファレンスに記載されていない機能もテストを兼ねて�
 
 まずはSample Viewを表示します。Windowメニューから```Show View```-```Other…```を選択し、```Samples```を選択します。
 
+
 <img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/TiStudioSampleViews1.png" />
+
+
 <img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/TiStudioSampleViews2.png" />
 
 そうすると画面下部のTasks/Consoleなどが並ぶエリアにSamplesが追加されますので、ここに表示されている```Kitchen Sink```を右クリックし、```Import sample as project…```を選択します。
+
 
 <img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/TiStudioSampleViews3.png" />
 
 プロジェクトのインポート画面が表示されるので、適当なプロジェクト名（KitchenSinkのままで良いと思います）を選択して、Finishボタンをクリックすると、githubからファイルを受信し、新たなプロジェクトが生成されます。
 
+
 <img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/TiStudioKitchenSink1.png" />
+
 
 <img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/TiStudioKitchenSink2.png" />
 
@@ -37,10 +41,12 @@ githubから直接取得する場合は次の手順となります。
 レポジトリのスナップショットを取得だけをする場合 gitクライアントは不要です。 
 上記リンクにアクセスし、画面の右上にある「ダウンロード」ボタンを選択します。 続いて表示される画面でアーカイブファイルを選択し、ダウンロードします。完了後、展開してください。
 
+
 <img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/TiStudioKitchenSink3.png" />
  ￼
 展開したKitchenSinkのアーカイブから最新のプロジェクトをTitanium Studioに取り込みます。 Titanium Studioのファイルメニューから「Import」を選択します。
 ￼
+
 <img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/TiStudioKitchenSink4.png" />
 
 候補からImport Existing Titanium Projectを選択し、必要なパス情報を入力すると取り込まれます。先ほど展開した先の /KitchenSink フォルダを選択後「OK」ボタンをクリックします。
@@ -52,6 +58,7 @@ githubから直接取得する場合は次の手順となります。
 Gitからのインポートやこのような既存のTitaniumプロジェクトの取り込み時には自動的にTitanium Mobile(もしくはDesktop)のプロジェクトと認識されないことがあります。
 その場合、ProjectメニューのPropertiesを選択し、Project Naturesで次の画面のようにTitanium Mobile（とWeb）が有効になるようにしてください。
 ￼
+
 <img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/TiStudioKitchenSink5.png" />
 
 ##KitchenSinkの構成

@@ -1,11 +1,25 @@
-<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/cover.png" height="240" />
-
 第二章 Titanium Mobile環境構築（１）開発環境の準備
 ========================================================
 Titanium Mobileでの開発に必要となる統合開発環境Titanium Studioをはじめ、iOS・Androidの各開発環境の導入を行い、Hello Worldアプリケーションを開発する準備をしましょう。
 
 ##準備の前に
 Titanium Mobileの動作には以下の環境が必要となりますので、まずはやりたいことが出来る環境をお持ちかどうかご確認ください。
+
+###iOSにはOSX環境が必要
+
+iPhone・iPad・iPod touchなどのiOSデバイス向け開発にはiOS SDKとXcodeが必要となり、システム要件もそれに連動します。開発機のOSとしてMac OSXが必要です。
+
+そのため、Windows・UbuntuではiOS開発はできません。
+
+また、iOS SDKは常に最新のMac OSXのバージョンを要求する傾向が強くあり、最新版である SDK 5.1.0ではOSX 10.6(Snow Leopard)が最低条件となっています。
+
+今後のiOS SDKでは 10.7(Lion)以上が要件となってくるでしょう。
+
+###Android開発について
+
+Androidはサポートされている環境で開発でき、Android 2.2以降をサポートしています。
+
+(Titanium Mobile 1.8.0よりiOS SDK 3.2.2以前、Android SDK 2.1以前がサポートされなくなりました。)
 
 ###OSとプラットフォームの対応
 <table border="2">
@@ -60,19 +74,6 @@ Titanium Mobileの動作には以下の環境が必要となりますので�
 またTitanium Studioの動作に1GBのメモリ、Android SDKの動作にそれに加えて1~1.5GBのメモリが必要となります。
 Titanium Mobileでの開発には2~3GBのメモリを確保する事が推奨されています。
 
-###iOSにはOSX環境が必要
-
-iPhone・iPad・iPod touchなどのiOSデバイス向け開発にはiOS SDKとXcodeが必要となり、システム要件もそれに連動します。開発機のOSとしてMac OSXが必要です。
-そのため、Windows・UbuntuではiOS開発はできません。
-
-また、iOS SDKは常に最新のMac OSXのバージョンを要求する傾向が強くあり、最新版である SDK 5.1.0ではOSX 10.6(Snow Leopard)が最低条件となっています。
-今後のiOS SDKでは 10.7(Lion)以上が要件となってくるでしょう。
-
-###Android開発について
-
-Androidはサポートされている環境で開発でき、Android 2.2以降をサポートしています。
-(Titanium Mobile 1.8.0よりiOS SDK 3.2.2以前、Android SDK 2.1以前がサポートされなくなりました。)
-
 ##iOS用開発環境の構築
 
 ###iOS SDKとXcodeのインストール
@@ -108,18 +109,11 @@ iOSデバイス向けの開発を本格的に進めていくためにはiOS Deve
 
 すぐさま必要になるものではありませんので、必要になってから登録を行いましょう。
 
-####はみだしコメント
+####Mac AppStoreとiOS Developer Centerのいずれからインストールするべきか？
 
-> Mac App Store経由の場合、バージョンアップ時の差分インストールができるため、初回インストール以降の時間短縮が図れます。
-> 一方で、リリース版のXcodeならびにiOS SDKのみの利用となる弊害もあります。ただし後述する理由からベータ版のiOS SDKインストールがTitanium Mobileでは推奨されないため、筆者としてはOSがLionである場合は、Mac App Store経由でのダウンロードをおススメしています。
+Mac App Store経由の場合、バージョンアップ時の差分インストールができるため、初回インストール以降の時間短縮が図れます。
 
-
-####コラム:実はオススメできないベータ版iOS SDKインストール
-
-> Titanium Mobileで実際の実行ファイルを生成するためにiOS SDKを使用することは前述しましたが、それはビルド時に用いるファイルがiOS SDKそのものであることも指しています。
-> メーカであるAppceleratorは正式公開版のiOS SDK(ならびにXcode)については公開後、速やかな対応をする動きをしておりますが、開発者向けのベータ公開版については原則的に(無償)サポート対象外となっています。
-> ベータ版SDKを一度開発環境にインストールしてしまうと、```Xcode-select```コマンドのお世話になるハメになり、何かと面倒です。
-> 本当にこの環境にベータ版SDKをインストールする必要があるのかについて、よくよく考えてからインストールしてみましょう。
+一方で、リリース版のXcodeならびにiOS SDKのみの利用となる弊害もあります。ただし後述する理由からベータ版のiOS SDKインストールがTitanium Mobileでは推奨されないため、筆者としてはOSがLionである場合は、Mac App Store経由でのダウンロードをおススメしています。
 
 
 ##Android SDKの導入
@@ -137,7 +131,7 @@ Android開発を行うためにはシステムにJava SDK（JDK）が導入さ�
 javac 1.6.0_22環境によってはパスが通っていない状態などがありますので、環境変数を適切に設定して認識するようにしてください。
 
 ###Android SDKのダウンロード
-Android Developerサイト(http://developer.android.com/sdk/index.html)からAndroid SDKをダウンロードします。
+[Android Developerサイト](http://developer.android.com/sdk/index.html)からAndroid SDKをダウンロードします。
 各プラットフォームに適したファイルをダウンロードしてください。
 
 ###Mac OSへの導入
@@ -190,9 +184,13 @@ Java SEダウンロードページにアクセスし、JDKダウンロードボ�
 ```javac```コマンドにパスが通っていないとTitanium Mobileが正しく動作しないため、環境変数に設定を追加します。システムのプロパティを開き「システムの詳細設定」を選択します。
 ￼
 詳細設定タブの「環境変数」を選択して、システム環境変数のPATHの末尾にJavaSDKのインストール先のbinフォルダを半角のセミコロン（；）を付けて追記してから、もう一度バージョン確認処理を実行してください。
-（例では、```〜;C:¥Progaram Files¥Java¥jdk1.6.0_23¥bin```）
+
+（例では、`〜;C:¥Progaram Files¥Java¥jdk1.6.0_23¥bin`）
+
 続いてAndroid SDKをインストールします。
+
 ダウンロードしたセットアップファイルを実行し、インストーラの指示に従って進めてください。完了後、SDK Managerを起動し、APIパッケージをインストールします。インストールするパッケージについてはMaxOSXと同様になります。
+
 ```adb```のシンボリックリンクについてはコマンドプロンプトを管理者権限で立ち上げ、次のコマンドを実行する必要があります。
 
     cd C:\Program Files\Android\android-sdk-windows\tools

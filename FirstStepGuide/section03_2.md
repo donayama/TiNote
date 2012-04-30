@@ -1,8 +1,8 @@
-<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/cover.png" height="240" />
-
 第三章 Hello, TiWorld（２）ソース解説
 ========================================================
+
 先ほど動かしてみたソースについて中身を追いかけていきたいと思います。
+
 
 ##プロジェクトのフォルダ構成
 <img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/ProjectFolderLayout.png" align="right" />
@@ -39,6 +39,7 @@
 ##app.jsを読む…前に
 アプリケーションの開始点（エントリポイント）となるapp.jsですが、その内容を説明する前に、その中で関数（メソッド）の引数として度々登場している**JavaScriptオブジェクトリテラル**という表現について先に触れておきます。
 
+
 ```JavaScript
 // {と}で囲っている部分が"オブジェクト"として扱われるため"オブジェクトリテラル"と呼ぶ
 var theObject = {
@@ -53,6 +54,8 @@ alert(theObject.numericPropName); // 10
 alert(theObject.objectPropName.nestedPropName);	// 123
 alert(theObject["stringPropName"]);	// このような表現も可能（「文字列」と表示される）
 ```
+
+
 ひとまずは、他の言語系で連想配列・ハッシュテーブル・ディクショナリと呼ばれるものと同じように捉えていただいて結構です。 
 これを踏まえて、app.jsのソースを見ていきましょう。
 
@@ -154,25 +157,47 @@ Tabを選択すると、それに紐づくWindowに切り替わります。
 Windowはコンテンツを表示するユーザインタフェイスの中核部分になります。
 Window上にはコンテナとして複数のViewもしくはコントロールが配置(add)もしくは除去(remove)できる他、Viewやコントロール自体もコンテナとなることが可能です。Window内に深い階層構造が発生するため、画面設計時にその親子関係を把握しておく必要があります。
 
+
 <img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/images/WindowTab3.png" height="300" width="200" />
 
-	Tab	Window	NavBar	Button×２個	
-	MapView	Annotation	ImageView
-	Toolbar	Button×7個
+
+<table border="2">
+<tr>
+    <td rowspan="3">Tab</td><td rowspan="3">Window</td><td>NavBar</td><td colspan="2">Button×２個</td>
+</tr>
+<tr>
+	<td>MapView</td><td>Annotation</td><td>ImageView</td>
+</tr>
+<tr>
+	<td>Toolbar</td><td colspan="2">Button×7個</td>
+</tr>
+</table>
 
 ##プラットフォームによるUIの違い
 
 すでに画面を見ていただいているためにお気づきかもしれませんが、タブの選択部分がiOSでは下部に、Androidでは上部に表示されるようになっています。
 
+
 これはネイティブのUI部品のデザイン思想・戦略の違いから生まれるものです。
+
 
 この問題の解決策として、端的に言うとプラットフォームごとに処理を分けるしかありません。
 
-もちろん同様の挙動をするようにUI構築することは不可能ではありませんが、実際にその画面を利用するユーザの視点に立つと、AndroidなのにiOSライクな動きをすること（あるいはその逆）は直感的な操作を阻害する要素以外の何者でもありません。
-ゲームなど全画面のUIをすべて描画する系統のアプリケーションでは無い限り、プラットフォームの流儀に沿った造りになるように心がける必要があるでしょう。
-￼また、Androidでは画面サイズ・解像度が異なる多数存在するため、すべての端末で意図する表示をさせるためにはかなりの労力を割く必要があります。
 
-##コラム："Write once, adapt anywhere"という考え方
+もちろん同様の挙動をするようにUI構築することは不可能ではありませんが、実際にその画面を利用するユーザの視点に立つと、AndroidなのにiOSライクな動きをすること（あるいはその逆）は直感的な操作を阻害する要素以外の何者でもありません。
+
+ゲームなど全画面のUIをすべて描画する系統のアプリケーションでは無い限り、プラットフォームの流儀に沿った造りになるように心がける必要があるでしょう。
+￼
+また、Androidでは画面サイズ・解像度が異なる多数存在するため、すべての端末で意図する表示をさせるためにはかなりの労力を割く必要があります。
+
+###コラム："Write once, adapt anywhere"という考え方
+
 iOSとAndroidの両対応というと、かつてJavaが標榜していた**"Write once, run anywhere"**を思い出す方もいらっしゃるかもしれませんが、Titanium Mobile開発元のAppceleratorとしてはそこを目標としていません。
 
+
 あくまでも書いたコードをどこにでも適用できるところをゴールとしており、プラットフォーム個別の実装を要する点（UIだけに限らず、プラットフォームに特化したような機能を利用する事も含め）はプラットフォーム差を埋めるコードを開発者サイドで書く必要があるということを念頭に置いておかないと、思いもしないところで躓いてしまいます。
+
+
+(…ここに追記予定…)
+
+

@@ -1,33 +1,31 @@
-<img src="https://github.com/donayama/TiNote/raw/master/FirstStepGuide/cover.png" height="240" />
-
 第一章 スマートフォンアプリ開発の第二の選択肢"Titanium Mobile"とは？
 ==========================================================
 Titanium Mobileとは米Appcelerator Inc.によって開発されているモバイルデバイス向けのアプリケーション開発ツールです。
-特徴として「JavaScriptによるプログラミングのみでiOSデバイス(iPhone, iPod touch, iPad)やAndroid端末向けのアプリケーションが開発できる」ことが挙げられます。 
+特徴として**「JavaScriptによるプログラミングのみでiOSデバイス(iPhone, iPod touch, iPad)やAndroid端末向けのネイティブUIに対応したアプリケーションが開発できる」**ことが挙げられます。 
 本章ではそのおおまかな概念や動作原理、動作させるのに必要となる環境についてについて触れます。
 
 ##スマートフォンアプリ開発の第二の選択肢
 
-このドキュメントに興味を持たれたという事は、少なからずスマートフォンアプリケーション開発にご興味・ご関心があるかと思います。
+このドキュメントを手に取られているという事は、少なからずスマートフォンアプリケーション開発にご興味・ご関心があるかと思います。
 
 ビジネスで**もともとそういう分野の人間ではない**のにスマートフォン向けアプリケーションを作らないと行けない状態におかれたり、パソコン以上に身近な存在であるスマートフォンで自分のニッチな需要を満たすアプリケーションを作りたいという趣味レベルでいざ「今日から始める〜開発」的な入門書やWebのドキュメントを開くと、Objective-CやJavaといった言語の存在がまず大きな壁となることも少なからずあるでしょう。
 
 あるいはObjective-CやJavaでのプログラム開発が出来る方にとっても、「じゃあこれ、iPhoneだけじゃなくて、Androidにも対応してね！ でも予算はあんまり取れないけど」とか気軽に言われて頭を抱えることは少なくないのではないでしょうか。
 
-そういうプラットフォーム提供者による「第一かつ唯一の選択肢」ではなく、別の手法「第二の複数ある選択肢」のひとつとして、Titanium Mobileがあります。
+そういうプラットフォーム提供者による「主たる選択肢」ではなく、別の手法「第二の複数ある選択肢」のひとつとして、Titanium Mobileがあります。
 
-「複数ある」とわざわざ明記したようにAdobeに買収されたPhoneGap (http://phonegap.com) 、C#などの.NET言語で開発ができるMono touch (http://xamarin.com/monotouch) 、物理演算を使うような2Dゲーム開発に有利なCorona (http://www.anscamobile.com/corona/) などの選択肢がありますが、本書ではネイティブUIを使った違和感の無いUX(ユーザ体験)を提供しやすいTitanium Mobileについて触れていきたいと思います。
+「複数ある」とわざわざ明記したようにAdobeに買収された[PhoneGap](http://phonegap.com) 、C#で開発ができる[Mono touch](http://xamarin.com/monotouch) 、物理演算を使うような2Dゲーム開発に有利な[Corona](http://www.anscamobile.com/corona/)]や3Dゲーム開発に特化した[Unity](http://unity3d.com/)などの選択肢がありますが、本書では**ネイティブUIを使った違和感の無いUX(ユーザ体験)を提供しやすい**Titanium Mobileについて触れていきたいと思います。
 
 ##Titanium Mobileとは何か？
 
 Titanium Mobileは Objective-CやJavaといったプラットフォームSDKが想定しているプログラム言語の代わりにJavaScriptでのプログラム開発が行えるツールキットです。
 
-http://www.appcelerator.com/
+[http://www.appcelerator.com/](http://www.appcelerator.com/)
 
 とはいえ、JavaScriptで記述されたソースプログラムが逐一Objective-CやJavaのソースに翻訳されるわけではありません。あくまでもプログラミング言語としてはJavaScript (ECMAScript)によりコーディングされた内容が実行ファイル内に格納され、デバイス上での実行時にインタプリタ的に動的に解釈されます。
 言語ベースでロジックを置き換えるだけではなく、プラットフォームSDKが提供するAPIをより簡単にかつ共通的に操作できるように工夫されています。これらはTitanium Mobile APIとして提供されており、日々進化・洗練されています。
 
-次に挙げる代表的機能はすべてAPIで実現できます。
+次に挙げる代表的機能はすべて標準提供されるAPIで実現できます。
 
 
 <table border="2">
@@ -59,19 +57,25 @@ SQLiteデータベース</td>
 </tr>
 </table>
 
-プラットフォームOS・デバイスに依存したUIやAPIを利用しない限り、基本的にサポートされるプラットフォーム全てに対してコードを転用できると謳われていますので、JavaScriptによる開発効率の向上だけではなくマルチプラットフォーム展開を少ないコストで実現できることも魅力のひとつとなっています。
+プラットフォームOS・デバイスに依存したUIやAPIを利用しない限り、基本的にサポートされるプラットフォーム全てに対してコードを転用できる（ただしLook&Feelまでをプラットフォーム間で共通化させる事は推奨されていません）と謳われていますので、JavaScriptによる開発効率の向上だけではなくマルチプラットフォーム展開を少ないコストで実現できることも魅力のひとつとなっています。
 
 また最終的にネイテイブアプリケーションとして動作するため、App StoreやGoogle Play(Android Marketplace)でのアプリ公開も可能です。
 Titanium Mobileで開発されていると公言されているアプリケーションは多くないのですが、少なからずアプリケーションが公開されているようです。開発元のAppcelerator社のサイト内で代表的なユーザとしてはNBC Universal、eBay/PayPal/Anheuser-Busch、MTV、Computer Service Corporationが挙げられています。
 
-日本で代表的なアプリケーションとしてはココログ、Zaim、MogSnapなどが挙げられます。
+日本で代表的なアプリケーションとしては[ココログ](http://itunes.apple.com/jp/app/kokorogu-for-iphone/id336576793?mt=8)、[Zaim](http://zaim.net/)、[MogSnap](http://mogsnap.jp/)などが挙げられます。
+
+
+![](http://a1.mzstatic.com/us/r1000/110/Purple/8f/ac/36/mzl.jrhrypjr.320x480-75.jpg)
+![](http://a4.mzstatic.com/us/r1000/089/Purple/v4/7f/bb/cd/7fbbcd54-566c-818f-df4c-b89d2e5d0093/mzl.mwpgwzum.320x480-75.jpg)
+![](http://a5.mzstatic.com/us/r1000/066/Purple/v4/45/46/96/4546961b-68f0-dab8-c8e2-71ebd79227ee/mzl.mdiepwzb.320x480-75.jpg)
+
 
 ###Titanium Mobileを支えるテクノロジ
 Titanium MobileはJavaScriptでアプリケーションの画面操作・ロジックといったところをすべて記述します。
 
 ではそれは実際にはデバイス上でどのように動作するのでしょうか。
 
-ビルド時にバイナリ化されたJavaScriptをインタプリタ的に解釈し、中間層でObjective-CやJavaで構築されたプラットフォームAPIライブラリを呼び出す動作をしています。
+前述の通り、ビルド時にバイナリ化されたJavaScriptをインタプリタ的に解釈し、中間層でObjective-CやJavaで構築されたプラットフォームAPIライブラリを呼び出す動作をしています。
 
 	プラットフォームAPIライブラリ
 		↑
@@ -86,7 +90,7 @@ Titanium Mobile 1.8でサポートされたGoogle V8 RuntimeによりAndroid環�
 ###開発元Appcelerator社について
 Appcelerator Inc.（アプセラレータ、以下Appcelerator）はカリフォルニア州マウンテンビュー、いわゆるシリコンバレーに所在するITベンチャー企業です。
 
-CEOのJeff Haynie氏を中心に2011年12月時点で100名弱のスタッフを抱え、Titanium Mobile（タイタニウム モバイル もしくは タイタニアム モバイル）を中心にした同社の各製品の開発、ユーザサポートを行っています。
+CEOのJeff Haynie氏を中心に2011年12月時点で100名弱のスタッフを抱え、Titanium Mobile（タイタニウム モバイル）を中心にした同社の各製品の開発、ユーザサポートを行っています。
 
 同社ではかつてはマルチプラットフォーム志向を掲げ、デスクトップ向けにはTitanium Desktop、モバイル向けにはTitanium  Mobileという製品として公開しておりましたが、2012年1月にTitanium Desktopがオープンソースプロジェクトとして切り出される形となり。モバイルに注力する方針を打ち出しました。
 
@@ -96,25 +100,27 @@ CEOのJeff Haynie氏を中心に2011年12月時点で100名弱のスタッフを
 
 そのため、ドキュメントなどのソース以外のものへのアプローチが若干後回しになってきましたが、資金調達で人員の増強などを行った結果、ドキュメント面がようやく充実してきた…と言えるでしょう。
 
-###オープンソース開発企業
+####オープンソース開発企業
+
 Titanium Mobileの特徴のひとつとして、オープンソース開発されている点が挙げられます。
 
 githubのAppceleratorアカウントには各種製品やサンプルのレポジトリが存在しており、Titanium Mobileのソース・ドキュメント・サンプルプログラムがすべてApache License, Version 2.0で公開されています。
 
 この種の中間処理を委ねるツールキットはブラックボックスになりがちなため、何らかのトラブルに直面した時に対処しづらい傾向にありますが、同社の製品については公開されたソースコードを追うことにより製品バグか否かの切り分けもできるというメリットがあります。
 
-###日本で注目を集めるTitanium Mobile
+####日本で注目を集めるTitanium Mobile
+
 日本では2010年秋頃までは細々としか使われていなかったTitanium Mobileですが、10月以降アルファブロガーと呼ばれる方々がTitanium Mobileに関するプレゼンや記事を発表されたことにより急激に注目をあつめるようになりました。
 
 また、増井雄一郎氏(@masuidrive)が12月よりAppceleratorに参画され、日本でのエバンジェリスト活動をされたことにより、一層認知度が向上し、2012年に日本法人の設立がされる予定となっています。
-また、手前味噌ながら筆者が運営する日本語情報発信プロジェクトtitanium-mobile-doc-jaをはじめ日本語での得られる情報が多く存在しており、PhoneGapやColona、Mono touchといった同分野に位置するフレームワークや開発ツールとは一線を画する認知度を持つようになってきました。
+また、手前味噌ながら筆者が運営する日本語情報発信プロジェクトtitanium-mobile-doc-jaをはじめ日本語での得られる情報が多く存在しており、同分野に位置するフレームワークや開発ツールとは一線を画する認知度を持つようになってきました。
 
 ##価格体系・ライセンス
 Titanium Mobileの利用に際しては無料で利用可能なApp EXPLOREライセンスと月額費用型のApp ACCELERATEライセンスが用意されています。App ACCELERATEにはStandard、Enhanced、Premiumの３種類のラインナップが用意されており、それぞれでサービスレベルが異なります。
 
 いずれにおいてもTitanium SDKの利用や統合開発環境Titanium Studioの利用に制限はありません。
 
-<table><tr><th colspan="2" rowspan="2"></th>
+<table border="2"><tr><th colspan="2" rowspan="2"></th>
 <th rowspan="2">App EXPLORE</th>
 <th colspan="3">App ACCELERATE</th>
 </tr><tr>
@@ -173,3 +179,12 @@ Indie</th><th>補足</th></tr>
 
 とはいえ、ここで触れた規約問題のように、開発環境の存在自体を脅かすような状況が今後も発生しないという保証はありません。
 Titanium Mobileに限らず、プラットフォーム提供者が想定する環境（iOS端末の場合はXcode + Objective-C/C/C++ 環境、Android端末の場合はJava）以外での開発を選択するということのリスクは、あくまでも開発者自身が負うことを十分に認識して利用する必要がありますので、その点をご留意ください。
+
+###コラム:実はオススメできないベータ版iOS SDKインストール
+
+Titanium Mobileで実際の実行ファイルを生成するためにiOS SDKやAndroid SDKが必要となります。
+Titanium Mobileを開発しているAppceleratorは正式公開版のiOS SDK(ならびにXcode)については正式公開後に対応をする動きをしており、場合に寄っては正式公開後１ヶ月以上要したときもありました。
+
+また、開発者向けのベータ公開版については原則的に(無償)サポート対象外となっています。ベータ版SDKを一度開発環境にインストールしてしまうと、環境切り替えのためのコマンドを実行する必要があるなど、何かと面倒です。
+
+本当にベータ版SDK／正式版のアップデートをインストールする必要があるのかについてよくよく考えてからインストールすることをおススメいたします。
